@@ -17,10 +17,7 @@ dependencies = [
     "passlib[bcrypt]>=1.7.4",
     "bcrypt>=4.1.0",
     "python-multipart>=0.0.6",
-    "langchain>=0.1.0",
-    "langchain-openai>=0.0.2",
-    "anthropic>=0.40.0",
-    "langchain-anthropic>=0.1.0",
+    
     "pgvector>=0.2.0",
     "redis>=5.0.0",
     "httpx>=0.25.0",
@@ -31,9 +28,10 @@ dependencies = [
     "psycopg>=3.3.4",
     "slowapi>=0.1.9",
     "asyncpg>=0.31.0",
-    "langchain-google-vertexai>=3.2.3",
-    "google-cloud-aiplatform>=1.156.0",
+    
+    "langchain>=0.1.0",
     "langchain-google-genai>=4.2.4",
+    "langgraph>=0.1.0",
 ]
 
 [project.optional-dependencies]
@@ -46,6 +44,8 @@ dev = [
     "mypy>=1.7.0",
     "vulture>=2.10.0",
 ]
+
+    
 
 [build-system]
 requires = ["hatchling"]
