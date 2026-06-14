@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from 'react';
-import SideBar from '../api/ui/components/side-bar/side-bar';
+import SideBar from '../ui/components/side-bar/side-bar';
 
 export default function ChatIndexPage() {
   const sideRef = useRef(null);

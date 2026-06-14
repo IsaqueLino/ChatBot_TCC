@@ -1,9 +1,9 @@
 "use client";
 import React, { useRef } from 'react';
-import SideBar from '../../api/ui/components/side-bar/side-bar';
+import SideBar from '../../ui/components/side-bar/side-bar';
 import dynamic from 'next/dynamic';
 
-const ChatComponent = dynamic(() => import('../../api/ui/components/chat/chat.jsx'), { ssr: false });
+const ChatComponent = dynamic(() => import('../../ui/components/chat/chat.jsx'), { ssr: false });
 
 export default function ChatPage({ params }) {
   const { chatId } = params;
