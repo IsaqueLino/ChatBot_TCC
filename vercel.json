@@ -1,17 +1,12 @@
 {
     "experimentalServices": {
         "frontend": {
-            "root": "frontend",
-            "routePrefix": "/",
-            "framework": "nextjs",
-            "buildCommand": "npm run build",
-            "runCommand": "npm start"
+            "entrypoint": "frontend",
+            "routePrefix": "/"
         },
         "backend": {
-            "root": "backend",
-            "routePrefix": "/_/backend",
-            "buildCommand": "uv sync",
-            "runCommand": "uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+            "entrypoint": "backend/app/main.py",
+            "routePrefix": "/_/backend"
         }
     }
 }
